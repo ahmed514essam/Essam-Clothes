@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.bodyy {
+    background-image: url(/public/images/accountBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+.form {
+    width: 400px;
+    background-color: rgba(128, 128, 128, 0.5); /* Black with 50% opacity */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 12px;
+}
+.form::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: -9; /* Puts the background behind the content */
+  }
+.form h1 {
+    font-weight: 700;
+    color: rgb(0, 3, 77);
+}
+.form label {
+     font-weight: 600;
+}
+.form input {
+    margin-bottom: 10px;
+    height: 38px;
+    outline: none;
+    border: 0;
+    
+}
+.names {
+width: 90%;
+margin: auto;
+display: flex;
+flex-direction: column;
+}
+.email {
+    width: 90%;
+    margin: auto;
+display: flex;
+flex-direction: column;
+}
+.pass {
+    width: 90%;
+    margin: auto;
+display: flex;
+flex-direction: column;
+}
+.passCon {
+    width: 90%;
+    margin: auto;
+display: flex;
+flex-direction: column;
+}
+.city {
+    width: 90%;
+    margin: auto;
+display: flex;
+flex-direction: column;
+}
+.btnns {
+    width: 90%;
+    margin: auto;
+display: flex;
+flex-direction: column;
+margin-top: 20px;;
+
+}
+.btnns button {
+    border: 0;
+    background-color: rgb(0, 3, 77);
+    color: white;
+font-weight: 600;
+padding: 10px 15px;
+font-size: 1.2em;
+width: 50%;
+margin: auto;
+border-radius: 12px;
+}
+.btnns .linkk {
+    text-decoration: none;
+    font-weight: 600;
+    color: brown;
+    text-align: center;
+}
+.error {
+    border: 2px solid red;
+}

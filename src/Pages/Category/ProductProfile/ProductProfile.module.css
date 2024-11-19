@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: rgb(220, 220, 220);
+}
+.content {
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+background-color: white;
+margin-top:30px ;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 30px 30px;
+}
+.imgeProduct img {
+    object-fit: cover;
+    width: 100%;
+}
+.imgeProduct {
+  
+width: 300px;
+
+
+}
+.ProductDetails {
+    width: 50%;
+
+}
+.ProductDetails h1 
+{
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+}
+.redPrice {
+    color: red;
+    font-weight: 600;
+    font-family: monospace;
+}
+.prices {
+    font-size: 1.5em;
+    text-align: center;
+}
+.asd {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.btnsAddCart {
+    text-align: center;
+}
+.ProductDetails {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.ptnAdd 
+{
+    border-radius: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: blue;
+    border: 0;
+    padding: 10px 15px;
+    width: 200px;
+    margin: auto;
+}
+.ptnAddi 
+{
+    border-radius: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    border: 0;
+    padding: 10px 15px;
+    width: 200px;
+    margin: auto;
+}
+@media (max-width:773px) {
+    .content {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    background-color: white;
+    margin-top:30px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 30px;
+    }
+    .imgeProduct {
+min-width: 200px;
+width: 70%;
+margin: auto;
+text-align: center;
+margin-bottom: 20px;    
+
+    }
+    .ProductDetails {
+        width: 80%;
+        margin: auto;
+    }
+}

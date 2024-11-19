@@ -1,14 +1,14 @@
-import Header from "./MainComponents/Header/Header";
-import Footer from "./MainComponents/Footer/Footer";
-import { Outlet } from "react-router-dom";
-
-// Named function for better clarity and debugging
-export default function RootLayout() {
+import { Outlet } from 'react-router-dom';
+import Header from './MainComponents/Header/Header';
+import Footer from './MainComponents/Footer/Footer';
+export default function Root() {
   return (
-    <>
-      <Header />
-      <Outlet />
-      <Footer />
-    </>
-  );
+<>
+<Header/>
+    <Outlet/>
+    <Footer/>
+</>
+  )
 }
+
+

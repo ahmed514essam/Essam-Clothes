@@ -1,0 +1,123 @@
+.navbar {
+    width: 100%;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+  
+  button.dropdown-toggle::after {
+    display: none;
+  }
+  .dropdown-toggle::after {
+    display: none !important;
+  }
+  .listInside {
+    height: 100%;
+    width: 230px;
+    position: absolute;
+    transition: 0.5s ease;
+    background-color: rgb(232, 232, 232);
+    right: 0;
+    bottom: 0;
+    top: 0;
+    text-align: center;
+    padding: 50px 0;
+    transform: translateY(-100%);
+
+  }
+  .dropdown {
+background-color: rgb(232, 232, );
+  }
+  .dropDownLink , .Categories {
+    border: 0;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding-top: 10px;
+    background-color: rgb(232, 232, 232);
+  }
+  .btnnn {
+    display: block;
+    padding: 5px 10px;
+    background-color: rgb(42, 42, 255);
+    color: white;
+    font-weight: 700;
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 20px;
+}
+.inputt {
+  display: none;
+visibility: hidden;
+-webkit-oppearance:none;
+}
+.toggle {
+  position: absolute;
+  height: 40px;
+width: 50px;
+top: 26px;
+right: 20px;
+z-index: 1;
+border-radius: 2px;
+cursor: pointer;
+}
+.toggle .common {
+position: absolute;
+height: 1px;
+width: 10px;
+background-color: #1f1f1f;
+border-radius: 50px;
+transition: 0.3s ease;
+}
+.toggle .top-line {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.toggle .middle-line {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.toggle .bottom-line {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.inputt:checked ~ .toggle .top-line {
+left: 2px;
+top: 14px;
+width: 25px;
+transform: rotate(45deg);
+}
+.inputt:checked ~ .toggle .bottom-line {
+  left: 2px;
+  top: 14px;
+  width: 25px;
+  transform: rotate(-45deg);
+  }
+  .inputt:checked ~ .toggle .middle-line {
+    opacity: 0;
+    transform: rotate(20deg);
+    }
+    .inputt:checked ~ .listInside {
+      transform: translateY(0);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    .labelContent {
+      display: none;
+    }
+    @media (max-width:691px) {
+      .labelContent {
+        display: flex;
+      }
+     
+
+    }
+    @media (max-width:497px) {
+   
+  
+  .btnnn {
+      display: none;
+  }
+     }

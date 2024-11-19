@@ -7,7 +7,7 @@ function Footer () {
 
 <>
 
-<h1>End</h1>
+
 </>
 
 
