@@ -121,3 +121,23 @@ transform: rotate(45deg);
       display: none;
   }
      }
+
+     .searchResults {
+      
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      background: white;
+      border: 1px solid #ddd;
+      
+    }
+    
+    .searchResultItem {
+      padding: 10px;
+      cursor: pointer;
+    }
+    
+    .searchResultItem:hover {
+      background-color: #f0f0f0;
+    }
+    

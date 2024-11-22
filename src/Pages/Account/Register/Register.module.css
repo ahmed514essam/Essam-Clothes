@@ -84,7 +84,7 @@ flex-direction: column;
 margin-top: 20px;;
 
 }
-.btnns .onecli {
+.btnns button {
     border: 0;
     background-color: rgb(0, 3, 77);
     color: white;
@@ -100,14 +100,34 @@ border-radius: 12px;
     font-weight: 600;
     color: brown;
     text-align: center;
-    font-size: 1.2em;
-    border: 0;
-    width: 80%;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 12px;
-    cursor: pointer;
 }
 .error {
     border: 2px solid red;
+}
+.poi {
+    font-weight: 800;
+    font-size: 1.5em;
+    font-family: sans-serif;
+color: rgb(4, 4, 43);
+cursor: pointer;
+    animation-name: poipoi;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+}
+@keyframes poipoi {
+    0% {
+color: rgb(4, 4, 43);
+    }
+    25% {
+color: rgb(51, 8, 102);
+    }
+    50% {
+color: rgb(93, 18, 18);
+    }
+    75% {
+color: rgb(10, 78, 10);
+    }
+    100% {
+color: cadetblue;
+    }
 }

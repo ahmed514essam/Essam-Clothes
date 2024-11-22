@@ -1,0 +1,35 @@
+header {
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    left: 0;
+    font-family: sans-serif;
+    padding: 30px 5px 30px 0;
+    background-color: rgba(128, 128, 128, 0.5); /* Black with 50% opacity */
+text-align: center;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+}
+.links .loi {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.loi:hover {
+    color: blue;
+}
+.ppRights {
+    font-weight: 600;
+    padding-top: 20px;
+}
+@media (max-width:381px) {
+    .links {
+        flex-direction: column;
+        direction: ltr;
+        align-items: center;
+    }
+}

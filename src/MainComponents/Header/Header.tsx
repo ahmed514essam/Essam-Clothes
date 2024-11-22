@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBagShopping , faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Data from "../../product.json" ;
 
 function Header() {
 
@@ -13,9 +14,28 @@ function Header() {
     price: number;
     quantity: number;
   };
-  
+  interface Product {
+    id: number;
+    name: string;
+    price: number;
+    image?: string;
+    category: string;
+}
+  const [data, setData] = useState<Product[]>([]);
+const [ serch , setSerch] = useState("");
+
+  useEffect(() => {
+    setData(Data as Product[]);
 
 
+}, []);
+
+useEffect(() => {
+  console.log(data.map((item) => {
+    <p>{item.name}</p>
+  }) )
+
+});
 
   const [cartCount, setCartCount] = useState(0);
 
@@ -54,11 +74,41 @@ function cartGo() {
   navicate("/cart")
 }
 
+const [GetLocal, setGetLocal] = useState(localStorage.getItem("user"));
 
+
+
+useEffect(() => {
+  const handleStorageChange = () => {
+    setGetLocal(localStorage.getItem("user"));
+  };
+
+  window.addEventListener("storage", handleStorageChange);
+
+
+  return () => {
+    window.removeEventListener("storage", handleStorageChange);
+  };
+}, []);
+
+const logOut = () => {
+  localStorage.removeItem("user");
+  setGetLocal(null); 
+};
+
+
+const accountt = () => {
+navicate("/account")
+}
+
+const ffg = () => {
+  navicate("/category")
+}
 
 
 
   return (
+    <>
     <nav>
     
 <div className={style.leftSide}>
@@ -73,7 +123,7 @@ function cartGo() {
 
 
 <div className="dropdown">
-  <button className={style.dropDownLink} type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button onClick={ffg} className={style.dropDownLink} type="button" data-bs-toggle="dropdown" aria-expanded="false">
 Gender
   </button>
   <ul className="dropdown-menu">
@@ -91,7 +141,6 @@ Gender
   <ul className="dropdown-menu">
     <li><a className="dropdown-item" href="#">Clothes</a></li>
     <li><a className="dropdown-item" href="#">Shoes</a></li>
-    <li><a className="dropdown-item" href="#"> Electronics</a></li>
   </ul>
 </div>
 
@@ -125,7 +174,7 @@ Categories</button>
 
 <FontAwesomeIcon className={style.iconCart} icon={faMagnifyingGlass} />
 
-  <input  type="search" placeholder="Search For a Product" />
+  <input  value={serch} name="serch" onChange={(e) => setSerch(e.target.value)}  type="search" placeholder="Search For a Product" />
 </span>
 
 <span onClick={cartGo} className={style.cartSpan}>
@@ -134,9 +183,17 @@ Categories</button>
   <span className={style.numOfCart}>{cartCount}</span> 
 </span>
 
-<span className={style.btnLog}>
-  <button className={style.btnsLog}><span>Log In</span></button>
-</span>
+
+
+{
+                    GetLocal ? <span className={style.btnLog}>
+                    <button className={style.btnsLog} onClick={logOut}><span>Log Out</span></button>
+                  </span>
+                    : <span className={style.btnLog}>
+                    <button className={style.btnsLog} onClick={accountt}><span>Account</span></button>
+                  </span>
+                }
+
 
 
     
@@ -196,6 +253,18 @@ Categories</button>
 
 
     </nav>
+
+    <div className="Searching">
+<div className="searchSpace">
+  <input type="search"  />
+</div>
+
+<div className="resultSpace">
+
+</div>
+    </div>
+
+    </>
   );
 }
 
