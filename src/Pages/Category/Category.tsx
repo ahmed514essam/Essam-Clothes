@@ -42,14 +42,14 @@ function Category() {
 
             <div className={styles.contentProd}>
                 {filteredData.map((item) => (
-                    <Link to={`/AboutProduct/${item.id}`} key={item.id}>
+                    <Link className={styles.productLinkFormate} to={`/AboutProduct/${item.id}`} key={item.id}>
                         <div className={styles.oneCart}>
                             <img
                                 src={item.image}
                                 alt={item.name}
                                 onError={(e) => {
                                     (e.target as HTMLImageElement).src =
-                                        "/ImagesProduct/placeholder.jpg";
+                                        "/placeholder.jpg";
                                 }}
                             />
                             <h2>{item.name}</h2>

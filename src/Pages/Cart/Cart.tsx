@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import style from "./Cart.module.css";
+import { useNavigate } from "react-router-dom";
 
 type CartItem = {
   id: number;
@@ -13,7 +14,7 @@ type CartItem = {
 
 const Cart = () => {
   const [cart, setCart] = useState<CartItem[]>([]);
-
+const navicate = useNavigate();
   useEffect(() => {
     const updateCart = () => {
       const storedCart = JSON.parse(localStorage.getItem("cart") || "[]");
@@ -67,15 +68,16 @@ const Cart = () => {
       alert("Your cart is empty!");
       return;
     }
-
-    alert(`Thank you for your purchase of $${calculateTotalPrice()}!`);
+navicate("/account")
     localStorage.removeItem("cart");
     setCart([]);
     window.dispatchEvent(new Event("cartUpdated"));
+    alert(`Thank you for your purchase of $${calculateTotalPrice()}!`);
+
   };
 
   return (
-    <div>
+    <div className={style.contentSiction}>
       <h1 className={style.head}>Cart</h1>
       {cart.length === 0 ? (
         <p>Your cart is empty</p>

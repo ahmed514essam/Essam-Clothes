@@ -121,23 +121,100 @@ transform: rotate(45deg);
       display: none;
   }
      }
+.Searching {
+  width: 30%;
+  margin: auto;
+  height: 60%;
+  border-radius: 8px;
+  background-color: white;
+  padding: 8px;
+}
+   .searchSpace {
+    width: 100%;
+    top: 0;
+    text-align: center;
+   } 
+   .searchSpace input {
+    width: 100%;
+    height: 35px;
+    padding: 2px 15px 5px 2px;
+    outline: none;
+    border: 0;
+    font-family: sans-serif;
+    border-radius: 8px;
 
-     .searchResults {
-      
-      position: absolute;
-      top: 60px;
+   }
+   .searchSpace input:focus {
+    border: 2px solid rgb(42, 133, 212);
+   }
+    .resultSpace {
+      background-color: white;
       width: 100%;
-      background: white;
-      border: 1px solid #ddd;
-      
-    }
-    
-    .searchResultItem {
-      padding: 10px;
+      margin: auto;
+      height: 80%;
+      padding: 20px 2px 20px 2px;
+      overflow-y: scroll;
       cursor: pointer;
+display: flex;
+flex-direction: column;
     }
-    
-    .searchResultItem:hover {
-      background-color: #f0f0f0;
+    .searchResultItem {
+      padding: 5px 8px;
+      border-bottom: 1px solid black;
+      border-radius: 7px;
+font-weight: 600;
+font-family: sans-serif;
+cursor: pointer;
+color: black;
+text-decoration: none;
     }
-    
+    .allSearching {
+      top: 0;
+      bottom: 0;
+      cursor: pointer;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(128, 128, 128, 0.5);
+      position: absolute;
+      z-index: 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .closeSpan {
+background-color: white;      width: 100%;
+display: block;
+      text-align: end;
+      padding-bottom: 10px;
+    }
+    .closee {
+      font-weight: 600;
+      color: black;
+      direction: rtl;
+    }
+    @media (max-width:733px) {
+      .Searching {
+        width: 80%;
+        margin: auto;
+      }
+    }
+    @media (max-width:844px) {
+      .Searching {
+        width: 60%;
+        margin: auto;
+      }
+    }
+    @media (max-width:1139px) {
+      .Searching {
+        width: 400px;
+        margin: auto;
+      }
+    }
+    @media (max-width:733px) {
+      .Searching {
+        width: 80%;
+        margin: auto;
+      }
+    }

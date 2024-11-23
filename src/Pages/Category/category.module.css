@@ -2,9 +2,11 @@
 .contentProductSection {
 background-color: aliceblue;
 width: 100%;
-min-height: max-content;
 height: 100vh;
 font-family: sans-serif;
+height: 100vh;
+margin-bottom: 200px;
+height: 100%;
 }
 
 .contentProd {
@@ -43,4 +45,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 .spanPrice {
     color: red;
     font-size: 1.2em;
+}
+.productLinkFormate {
+    text-decoration: none;
 }

@@ -2,11 +2,14 @@ import styles from "./Home.module.css" ;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import imageSrc from '../../photos/offer.jpg';
+import { useNavigate } from "react-router-dom";
 function Home() {
   
    
-
-
+const navicate = useNavigate();
+ const joinNow = () => {
+navicate("/account")
+}
     
 
 
@@ -20,7 +23,7 @@ function Home() {
     <h1>Just For You
 DISC for online order 25%
 </h1>
-<button>Join Now <span><FontAwesomeIcon icon={faArrowRight} /></span></button>
+<button onClick={joinNow}>Join Now <span><FontAwesomeIcon icon={faArrowRight} /></span></button>
 </div>
 
 

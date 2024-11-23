@@ -1,8 +1,8 @@
 import "./Header.css";
 import style from "./Header.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBagShopping , faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
+import { faBagShopping , faMagnifyingGlass ,faX } from "@fortawesome/free-solid-svg-icons";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Data from "../../product.json" ;
 
@@ -23,19 +23,40 @@ function Header() {
 }
   const [data, setData] = useState<Product[]>([]);
 const [ serch , setSerch] = useState("");
+const [close , setClose] = useState(false);
+const [filteredProducts , setFilteredProducts] = useState<Product[]>([]);
+
+
+
 
   useEffect(() => {
     setData(Data as Product[]);
-
-
 }, []);
 
-useEffect(() => {
-  console.log(data.map((item) => {
-    <p>{item.name}</p>
-  }) )
 
-});
+
+useEffect(() => {
+  if (serch.trim()) {
+    setFilteredProducts(
+      data.filter((product) =>
+        product.name.toLowerCase().includes(serch.toLowerCase())
+      )
+    );
+  } else {
+    setFilteredProducts([]);
+  }
+}, [serch, data]);
+
+
+const closeSearching = () => {
+  setClose(false);
+}
+const openSearching = () => {
+  setClose(true);
+}
+
+
+
 
   const [cartCount, setCartCount] = useState(0);
 
@@ -104,11 +125,18 @@ navicate("/account")
 const ffg = () => {
   navicate("/category")
 }
-
-
+ const categoriesGoo = () => {
+  navicate("/category")
+ }
+ 
+ const Acccc = () => {
+  navicate("/account")
+ }
 
   return (
     <>
+
+
     <nav>
     
 <div className={style.leftSide}>
@@ -174,7 +202,7 @@ Categories</button>
 
 <FontAwesomeIcon className={style.iconCart} icon={faMagnifyingGlass} />
 
-  <input  value={serch} name="serch" onChange={(e) => setSerch(e.target.value)}  type="search" placeholder="Search For a Product" />
+  <input onClick={openSearching}   type="search" placeholder="Search For a Product" />
 </span>
 
 <span onClick={cartGo} className={style.cartSpan}>
@@ -209,7 +237,7 @@ Categories</button>
     }>STORE</span></h1>
 <ul>
 <div className="dropdown">
-  <button className="dropDownLink" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button  className="dropDownLink" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 Gender
   </button>
   <ul className="dropdown-menu">
@@ -221,13 +249,12 @@ Gender
 
 
 <div className="dropdown">
-  <button className="dropDownLink" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button  onClick={categoriesGoo} className="dropDownLink" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Fashion
   </button>
   <ul className="dropdown-menu">
     <li><a className="dropdown-item" href="#">Clothes</a></li>
     <li><a className="dropdown-item" href="#">Shoes</a></li>
-    <li><a className="dropdown-item" href="#"> Electronics</a></li>
   </ul>
 </div>
 
@@ -235,11 +262,11 @@ Gender
 
 
 
-<button className="Categories">
+<button className="Categories" onClick={categoriesGoo}>
 Categories</button>
 
     
-<button className={style.btnnn}>Sign In</button>
+<button onClick={Acccc} className={style.btnnn}>Account</button>
 
 </ul>
 
@@ -254,15 +281,47 @@ Categories</button>
 
     </nav>
 
+    {close ? (
+  <div className="allSearching">
     <div className="Searching">
-<div className="searchSpace">
-  <input type="search"  />
-</div>
+      {/* Close Button */}
+      <span className="closeSpan">
+        <FontAwesomeIcon onClick={closeSearching} className="closee" icon={faX} />
+      </span>
 
-<div className="resultSpace">
+      {/* Search Input */}
+      <div className="searchSpace">
+        <input
+          value={serch}
+          name="serch"
+          onChange={(e) => setSerch(e.target.value)}
+          placeholder="Search For A Product"
+          type="search"
+        />
+      </div>
 
-</div>
+      {/* Search Results */}
+      {serch ? (
+        <div className="resultSpace">
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((product) => (
+              <Link
+                key={product.id}
+                className="searchResultItem"
+                to={`/AboutProduct/${product.id}`}
+              >
+                {product.name}
+              </Link>
+            ))
+          ) : (
+            <div className="NoFound">No results found</div>
+          )}
+        </div>
+      ) : null}
     </div>
+  </div>
+) : null}
+
 
     </>
   );

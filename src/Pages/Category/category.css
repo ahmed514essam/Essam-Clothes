@@ -22,3 +22,9 @@ box-shadow: 0 0 2px 0px rgb(255, 255, 255);
     color: white;
     border: 0;
 }
+@media (max-width:429px) {
+    
+.btnsProduct {
+    display: flex;
+    flex-wrap: wrap;
+}}
