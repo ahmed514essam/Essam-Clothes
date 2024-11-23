@@ -7,7 +7,7 @@ type Product = {
   id: number;
   name: string;
   price: number;
-  image?: string;
+  images?: string;
   description?: string;
   category?: string;
   quantity?: number;
@@ -70,10 +70,10 @@ const ProductProfile = () => {
     <div className={styles.content}>
       <div className={styles.imgeProduct}>
         <img
-          src={filterItem.image || "ImagesProduct/placeholder.jpg"}
+          src={filterItem.images || "/ImagesProduct/placeholder.jpg"}
           alt={filterItem.name}
           onError={(e) => {
-            (e.target as HTMLImageElement).src = "ImagesProduct/placeholder.jpg";
+            (e.target as HTMLImageElement).src = "/ImagesProduct/placeholder.jpg";
           }}
         />
       </div>

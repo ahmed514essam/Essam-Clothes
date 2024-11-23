@@ -4,6 +4,8 @@
       "id": 1,
       "price": 2570,
       "image": "ImagesProduct/1020.jpeg",
+      "images": "/public/ImagesProduct/1020.jpeg",
+
       "category": "girl"
     },
     {
@@ -11,6 +13,8 @@
       "id": 2,
       "price": 4920,
       "image": "ImagesProduct/111.jpeg",
+      "images": "/public/ImagesProduct/111.jpeg",
+
       "category": "girl"
     },
     {
@@ -18,6 +22,8 @@
       "id": 3,
       "price": 1740,
       "image": "ImagesProduct/1212.jpeg",
+      "images": "/public/ImagesProduct/1212.jpeg",
+
       "category": "girl"
     },
     {
@@ -25,6 +31,8 @@
       "id": 4,
       "price": 1420,
       "image": "ImagesProduct/1245.jpeg",
+      "images": "/public/ImagesProduct/1245.jpeg",
+
       "category": "girl"
     },
     {
@@ -32,6 +40,8 @@
       "id": 5,
       "price": 2010,
       "image": "ImagesProduct/1346.jpeg",
+      "images": "/public/ImagesProduct/1346.jpeg",
+
       "category": "girl"
     },
     {
@@ -39,6 +49,8 @@
       "id": 6,
       "price": 4670,
       "image": "ImagesProduct/222.jpeg",
+      "images": "/public/ImagesProduct/222.jpeg",
+
       "category": "girl"
     },
     {
@@ -46,6 +58,8 @@
       "id": 7,
       "price": 3990,
       "image": "ImagesProduct/30302.jpeg",
+      "images": "/public/ImagesProduct/30302.jpeg",
+
       "category": "girl"
     },
     {
@@ -53,6 +67,8 @@
       "id": 8,
       "price": 3210,
       "image": "ImagesProduct/444.jpeg",
+      "images": "/public/ImagesProduct/444.jpeg",
+
       "category": "girl"
     },
     {
@@ -60,6 +76,8 @@
       "id": 9,
       "price": 1310,
       "image": "ImagesProduct/4545.jpeg",
+      "images": "/public/ImagesProduct/4545.jpeg",
+
       "category": "girl"
     },
     {
@@ -67,6 +85,8 @@
       "id": 10,
       "price": 4930,
       "image": "ImagesProduct/6325.jpeg",
+      "images": "/public/ImagesProduct/6325.jpeg",
+
       "category": "girl"
     },
     {
@@ -74,6 +94,8 @@
       "id": 11,
       "price": 2210,
       "image": "ImagesProduct/777.jpeg",
+      "images": "/public/ImagesProduct/777.jpeg",
+
       "category": "girl"
     },
     {
@@ -81,6 +103,8 @@
       "id": 13,
       "price": 4280,
       "image": "ImagesProduct/989898.jpeg",
+      "images": "/public/ImagesProduct/989898.jpeg",
+
       "category": "girl"
     },
     {
@@ -88,6 +112,8 @@
       "id": 14,
       "price": 970,
       "image": "ImagesProduct/9797.jpeg",
+      "images": "/public/ImagesProduct/9797.jpeg",
+
       "category": "girl"
     },
     {
@@ -95,6 +121,8 @@
       "id": 15,
       "price": 1500,
       "image": "ImagesProduct/963021.jpeg",
+      "images": "/public/ImagesProduct/963021.jpeg",
+
       "category": "girl"
     },
     {
@@ -102,6 +130,8 @@
       "id": 16,
       "price": 3520,
       "image": "ImagesProduct/shirtBoy99.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy99",
+
       "category": "man"
     },
     {
@@ -109,6 +139,8 @@
       "id": 17,
       "price": 2220,
       "image": "ImagesProduct/shirtBoy88.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy88.jpeg",
+
       "category": "man"
     },
     {
@@ -116,6 +148,8 @@
       "id": 18,
       "price": 1820,
       "image": "ImagesProduct/shirtBoy8.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy8.jpeg",
+
       "category": "man"
     },
     {
@@ -123,6 +157,8 @@
       "id": 19,
       "price": 1170,
       "image": "ImagesProduct/shirtBoy7.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy7.jpeg",
+
       "category": "man"
     },
     {
@@ -130,6 +166,8 @@
       "id": 20,
       "price": 1760,
       "image": "ImagesProduct/shirtBoy6.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy6.jpeg",
+
       "category": "man"
     },
     {
@@ -137,6 +175,8 @@
       "id": 21,
       "price": 3490,
       "image": "ImagesProduct/shirtBoy55.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy55.jpeg",
+
       "category": "man"
     },
     {
@@ -144,6 +184,8 @@
       "id": 22,
       "price": 2710,
       "image": "ImagesProduct/shirtBoy5.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy5.jpeg",
+
       "category": "man"
     },
     {
@@ -151,6 +193,8 @@
       "id": 23,
       "price": 1580,
       "image": "ImagesProduct/shirtBoy4.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy4.jpeg",
+
       "category": "man"
     },
     {
@@ -158,6 +202,8 @@
       "id": 24,
       "price": 3300,
       "image": "ImagesProduct/shirtBoy3.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy3.jpeg",
+
       "category": "man"
     },
     {
@@ -165,6 +211,8 @@
       "id": 25,
       "price": 4410,
       "image": "ImagesProduct/shirtBoy26.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy26.jpeg",
+
       "category": "man"
     },
     {
@@ -172,6 +220,8 @@
       "id": 26,
       "price": 2350,
       "image": "ImagesProduct/shirtBoy25.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy25.jpeg",
+
       "category": "man"
     },
     {
@@ -179,6 +229,8 @@
       "id": 27,
       "price": 1260,
       "image": "ImagesProduct/shirtBoy20.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy20.jpeg",
+
       "category": "man"
     },
     {
@@ -186,6 +238,8 @@
       "id": 28,
       "price": 3860,
       "image": "ImagesProduct/shirtBoy2.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy2.jpeg",
+
       "category": "man"
     },
     {
@@ -193,6 +247,8 @@
       "id": 29,
       "price": 2490,
       "image": "ImagesProduct/shirtBoy19.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy19.jpeg",
+
       "category": "man"
     },
     {
@@ -200,6 +256,8 @@
       "id": 30,
       "price": 4070,
       "image": "ImagesProduct/shirtBoy18.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy18.jpeg",
+
       "category": "man"
     },
     {
@@ -207,6 +265,8 @@
       "id": 31,
       "price": 3030,
       "image": "ImagesProduct/shirtBoy16.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy16.jpeg",
+
       "category": "man"
     },
     {
@@ -214,6 +274,8 @@
       "id": 32,
       "price": 4980,
       "image": "ImagesProduct/shirtBoy14.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy14.jpeg",
+
       "category": "man"
     },
     {
@@ -221,6 +283,8 @@
       "id": 33,
       "price": 3210,
       "image": "ImagesProduct/shirtBoy10.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy10.jpeg",
+
       "category": "man"
     },
     {
@@ -228,6 +292,8 @@
       "id": 34,
       "price": 1060,
       "image": "ImagesProduct/shirtBoy12.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy12.jpeg",
+
       "category": "man"
     },
     {
@@ -235,6 +301,8 @@
       "id": 35,
       "price": 4500,
       "image": "ImagesProduct/shirtBoy11.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy11.jpeg",
+
       "category": "man"
     },
     {
@@ -242,6 +310,8 @@
       "id": 36,
       "price": 1820,
       "image": "ImagesProduct/shirtBoy.jpeg",
+      "images": "/public/ImagesProduct/shirtBoy.jpeg",
+
       "category": "man"
     },
     {
@@ -249,6 +319,8 @@
       "id": 37,
       "price": 1700,
       "image": "ImagesProduct/sh1.jpeg",
+      "images": "/public/ImagesProduct/sh1.jpeg",
+
       "category": "shoes"
     },
     {
@@ -256,6 +328,8 @@
       "id": 38,
       "price": 2700,
       "image": "ImagesProduct/sh3.jpeg",
+      "images": "/public/ImagesProduct/sh3.jpeg",
+
       "category": "shoes"
     },
     {
@@ -263,6 +337,8 @@
       "id": 39,
       "price": 3470,
       "image": "ImagesProduct/sh4.jpeg",
+      "images": "/public/ImagesProduct/sh4.jpeg",
+
       "category": "shoes"
     },
     {
@@ -270,6 +346,8 @@
       "id": 40,
       "price": 4700,
       "image": "ImagesProduct/sh5.jpeg",
+      "images": "/public/ImagesProduct/sh5.jpeg",
+
       "category": "shoes"
     },
     {
@@ -277,6 +355,8 @@
       "id": 41,
       "price": 2940,
       "image": "ImagesProduct/sh66.jpeg",
+      "images": "/public/ImagesProduct/sh66.jpeg",
+
       "category": "shoes"
     },
     {
@@ -284,6 +364,8 @@
       "id": 42,
       "price": 1810,
       "image": "ImagesProduct/sh7.jpeg",
+      "images": "/public/ImagesProduct/sh7.jpeg",
+
       "category": "shoes"
     },
     {
@@ -291,6 +373,8 @@
       "id": 43,
       "price": 4320,
       "image": "ImagesProduct/sh8.jpeg",
+      "images": "/public/ImagesProduct/sh8.jpeg",
+
       "category": "shoes"
     },
     {
@@ -298,6 +382,8 @@
       "id": 44,
       "price": 3780,
       "image": "ImagesProduct/shg3.jpeg",
+      "images": "/public/ImagesProduct/shg3.jpeg",
+
       "category": "shoes"
     },
   
@@ -307,6 +393,8 @@
         "id": 45 ,
         "price" : 4560,
         "image" : "ImagesProduct/shg5.jpeg",
+        "images": "/public/ImagesProduct/shg5.jpeg",
+
         "category" : "shoes" 
   
       },
@@ -316,6 +404,8 @@
         "id": 46 ,
         "price" : 930,
         "image" : "ImagesProduct/shg8.jpeg",
+        "images": "/public/ImagesProduct/shg8.jpeg",
+
         "category" : "shoes" 
   
       },
@@ -324,6 +414,8 @@
         "id": 47 ,
         "price" : 1000,
         "image" : "ImagesProduct/sh87.jpeg",
+        "images": "/public/ImagesProduct/shg87.jpeg",
+
         "category" : "shoes" 
   
       },
@@ -333,6 +425,8 @@
         "id": 48 ,
         "price" : 565,
         "image" : "ImagesProduct/shg99.jpeg",
+        "images": "/public/ImagesProduct/shg99.jpeg",
+
         "category" : "shoes" 
   
       }
