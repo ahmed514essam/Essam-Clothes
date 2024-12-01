@@ -455,4 +455,17 @@ margin: auto;
 
 }
 
-          
+      @media (max-width:1088px) {
+        
+.searchInput {
+  display: none;
+
+}
+.asd {
+  display: none;
+}
+
+      }    
+      .labelContent {
+        margin-left: 10px;
+      }
